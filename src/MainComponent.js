@@ -7,7 +7,7 @@ export default function MainComponent() {
   const hash = "abb8397e8f309853a6979c66696c8ee7"
   const [character, setCharacter] = useState("")
   const [isLoading, setLoading] = useState(false)
-  const apiUrl = `http://gateway.marvel.com/v1/public/characters?nameStartsWith=${character}&ts=${timestamp}&apikey=${apiKey}&hash=${hash}`
+  const apiUrl = `https://gateway.marvel.com/v1/public/characters?nameStartsWith=${character}&ts=${timestamp}&apikey=${apiKey}&hash=${hash}`
 
   const [apiData, setApiData] = useState([])
 
